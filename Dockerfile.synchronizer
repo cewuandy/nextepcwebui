@@ -12,20 +12,20 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# docker build -t xosproject/nextepcwebuiservice-synchronizer:candidate -f Dockerfile.synchronizer .
+# docker build -t xosproject/nextepcwebui-synchronizer:candidate -f Dockerfile.synchronizer .
 
-# xosproject/nextepcwebuiservice-synchronizer
+# xosproject/nextepcwebui-synchronizer
 
 FROM xosproject/xos-synchronizer-base:2.2.5
 
-COPY xos/synchronizer /opt/xos/synchronizers/nextepcwebuiservice
-COPY VERSION /opt/xos/synchronizers/nextepcwebuiservice/
+COPY xos/synchronizer /opt/xos/synchronizers/nextepcwebui
+COPY VERSION /opt/xos/synchronizers/nextepcwebui/
 
-WORKDIR "/opt/xos/synchronizers/nextepcwebuiservice"
+WORKDIR "/opt/xos/synchronizers/nextepcwebui"
 
 # Label image
 ARG org_label_schema_schema_version=1.0
-ARG org_label_schema_name=nextepcwebuiservice-synchronizer
+ARG org_label_schema_name=nextepcwebui-synchronizer
 ARG org_label_schema_version=unknown
 ARG org_label_schema_vcs_url=unknown
 ARG org_label_schema_vcs_ref=unknown
@@ -52,4 +52,4 @@ LABEL org.label-schema.schema-version=$org_label_schema_schema_version \
       org.opencord.component.xos.vcs-url=$org_opencord_component_xos_vcs_url \
       org.opencord.component.xos.vcs-ref=$org_opencord_component_xos_vcs_ref
 
-CMD ["/usr/bin/python", "/opt/xos/synchronizers/nextepcwebuiservice/nextepcwebuiservice-synchronizer.py"]
+CMD ["/usr/bin/python", "/opt/xos/synchronizers/nextepcwebui/nextepcwebui-synchronizer.py"]

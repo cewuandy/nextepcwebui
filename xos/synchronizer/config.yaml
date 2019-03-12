@@ -14,7 +14,7 @@
 # limitations under the License.
 
 
-name: nextepcwebuiservice
+name: nextepcwebui
 accessor:
   username: admin@opencord.org
   password: letmein
@@ -30,7 +30,7 @@ required_models:
   - KubernetesSecret
   - KubernetesConfigVolumeMount
   - KubernetesSecretVolumeMount
-dependency_graph: "/opt/xos/synchronizers/nextepcwebuiservice/model-deps"
-sys_dir: "/opt/xos/synchronizers/nextepcwebuiservice/sys"
-model_policies_dir: "/opt/xos/synchronizers/nextepcwebuiservice/model_policies"
-models_dir: "/opt/xos/synchronizers/nextepcwebuiservice/models"
+dependency_graph: "/opt/xos/synchronizers/nextepcwebui/model-deps"
+sys_dir: "/opt/xos/synchronizers/nextepcwebui/sys"
+model_policies_dir: "/opt/xos/synchronizers/nextepcwebui/model_policies"
+models_dir: "/opt/xos/synchronizers/nextepcwebui/models"

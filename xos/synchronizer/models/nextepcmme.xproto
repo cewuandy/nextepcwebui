@@ -1,5 +1,5 @@
-option app_label = "nextepcwebuiservice";
-option name = "nextepcwebuiservice";
+option app_label = "nextepcwebui";
+option name = "nextepcwebui";
 
 message NextEPCWebUI (Service){
     option verbose_name = "NextEPCWebUI";

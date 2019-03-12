@@ -16,22 +16,22 @@
 apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
-  name: nextepcwebui-service-synchronizer
+  name: nextepcwebui-synchronizer
   labels:
-    app: nextepcwebui-service-synchronizer
+    app: nextepcwebui-synchronizer
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nextepcwebui-service-synchronizer
+      app: nextepcwebui-synchronizer
   template:
     metadata:
       labels:
-        app: nextepcwebui-service-synchronizer
+        app: nextepcwebui-synchronizer
     spec:
       containers:
         - name: nextepcwebui-service
-          image: cewuandy/nextepcwebui-service-synchronizer
+          image: cewuandy/nextepcwebui-synchronizer
           imagePullPolicy: Always
           volumeMounts:
             - name: certchain-volume
