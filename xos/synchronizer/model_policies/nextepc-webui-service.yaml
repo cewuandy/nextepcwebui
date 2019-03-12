@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: nextepc-webui-service
+spec:
+  selector:
+    app: nextepc-webui
+  ports:
+  - protocol: TCP
+    port: 3000
+    nodePort: 30001
+  type: NodePort

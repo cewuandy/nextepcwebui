@@ -1,0 +1,10 @@
+option app_label = "nextepcwebuiservice";
+option name = "nextepcwebuiservice";
+
+message NextEPCWebUI (Service){
+    option verbose_name = "NextEPCWebUI";
+}
+
+message NextEPCWebUIInstance (ServiceInstance){
+    option verbose_name = "NextEPCWebUIInstance";
+}
